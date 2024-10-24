@@ -33,6 +33,6 @@ createServer((peticion,respuesta) => {
         });
 
     }
-}).listen(4000);
+}).listen(process.env.PORT || 4000);
 
        //servirFichero(respuesta, "./404.html",contentType("html"),404);
